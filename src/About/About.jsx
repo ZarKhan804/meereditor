@@ -3,8 +3,10 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 import Hero from "./Hero";
+import Cards from "./Cards";
 import Article from "./Article";
 import Internallinks from "./Internallinks";
+
 
 function About() {
   return (
@@ -18,7 +20,8 @@ function About() {
       </Helmet>
 
       <Hero />
-      <Article />
+      <Cards/>
+       <Article />
       <Internallinks />
     </>
   );

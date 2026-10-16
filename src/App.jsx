@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +11,7 @@ import Contact from "./Contact/Contact";
 import Disclaimer from "./Disclaimer/Disclaimer";
 import Earn from "./Earn/Earn";
 import Promotion from "./Promotion/Promotion";
+import DownloadURL from "./DownloadURL/Hero";
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/earn" element={<Earn />} />
           <Route path="/promotion" element={<Promotion />} />
+          <Route path="/download-url" element={<DownloadURL />} />
         </Routes>
       </main>
 

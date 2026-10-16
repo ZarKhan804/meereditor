@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import {
@@ -15,6 +14,7 @@ const navLinks = [
   { name: "Disclaimer", path: "/disclaimer" },
   { name: "Earn", path: "/earn" },
   { name: "Promotion", path: "/promotion" },
+  { name: " Free Download URL", path: "/download-url" },
 ];
 
 const Header = () => {
@@ -32,7 +32,6 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-[#e8e1d3] bg-[#faf7ef]/95 shadow-sm backdrop-blur-xl">
       <div className="mx-auto flex min-h-[76px] max-w-7xl items-center justify-between gap-5 px-5 sm:px-8 lg:px-10">
-
         {/* Logo */}
         <Link
           to="/"
@@ -65,7 +64,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav
-          className="hidden items-center gap-5 lg:flex xl:gap-8"
+          className="hidden items-center gap-5 lg:flex xl:gap-7"
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
